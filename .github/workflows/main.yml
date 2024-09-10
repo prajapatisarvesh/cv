@@ -28,6 +28,10 @@ jobs:
     - name: Upload PDF as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: main.pdf  # This will name the artifact exactly as main.pdf
+        name: main
         path: main.pdf
         if-no-files-found: error
+    - name: Unzip project
+      uses: montudor/action-zip@v1.0.0
+      with:
+       args: unzip main
