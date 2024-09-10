@@ -30,3 +30,14 @@ jobs:
       with:
         name: LaTeX-PDF
         path: main.pdf
+    - name: Deploy PDF to GitHub Pages
+      if: success()
+      run: |
+        git config --local user.name "GitHub Action"
+        git config --local user.email "action@github.com"
+        git reset --hard
+        cp main.pdf resume.pdf  # Rename your PDF if necessary
+        git add resume.pdf
+        git commit -m "Deploy updated resume"
+        git push -f origin main
+
