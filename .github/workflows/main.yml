@@ -28,5 +28,6 @@ jobs:
     - name: Upload PDF as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: LaTeX-PDF
+        name: main.pdf  # This will name the artifact exactly as main.pdf
         path: main.pdf
+        if-no-files-found: error
