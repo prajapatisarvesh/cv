@@ -1,7 +1,32 @@
-- name: Github Action for LaTeX
-  uses: xu-cheng/latex-action@3.2.0
-  with:
-    root_file: main.tex
-    latexmk_use_lualatex: true
-  env:
-    TEXINPUTS: resume.cls
+name: LaTeX Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up LaTeX environment
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: main.tex
+        latexmk_use_lualatex: true
+      env:
+        # Ensures that additional class files are found in the current directory
+        TEXINPUTS: "./:"
+
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: LaTeX-PDF
+        path: main.pdf
