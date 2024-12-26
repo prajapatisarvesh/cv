@@ -1,13 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1726152527.62302 "e:/cv/cv/main.tex" "main.pdf" "main" 1726155430.71593 2
+["pdflatex"] 1730859166.66731 "e:/cv/cv/main.tex" "main.pdf" "main" 1730859166.92688 2
   "C:/Users/sarve/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1719393830 20144 67a5f8e0f9e445e8ec6834e595cebdc9 ""
   "C:/Users/sarve/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1719393830 5048 7ebf0f2edf1ef6783e8fe2201a95d0e8 ""
   "C:/Users/sarve/AppData/Local/Programs/MiKTeX/tex/latex/base/size11.clo" 1719393830 8464 6b4d01be31907866396cf4ac23881d2d ""
-  "e:/cv/cv/main.tex" 1726152529 18082 a93c7933f96046665b1c31993c3a4bf9 ""
+  "e:/cv/cv/main.tex" 1730822002 15649 5662188c73af28f8fa2e9245166c5967 ""
   "main.aux" 1726152527 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.tex" 1726152529 18082 a93c7933f96046665b1c31993c3a4bf9 ""
+  "main.tex" 1730822002 15649 5662188c73af28f8fa2e9245166c5967 ""
   "parskip.sty" 0 -1 0 ""
-  "resume.cls" 1725989050 5230 cc3d87670b362796055877a080271ed0 ""
+  "resume.cls" 1730818591 5230 cc3d87670b362796055877a080271ed0 ""
   (generated)
   "main.aux"
   "main.log"
