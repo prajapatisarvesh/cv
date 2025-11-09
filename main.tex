@@ -59,8 +59,14 @@
 
 % \usepackage{mathpazo} 
 \usepackage{fontspec}
-\setmainfont[
-BoldFont = Source Sans Pro-{Semi-bold}]{Source Sans Pro}
+% \setmainfont[
+% BoldFont = Source Sans Pro-{Semi-bold}]{Source Sans Pro}
+\setmainfont{SourceSansPro-Regular.otf}[
+  Path = fonts/,
+  BoldFont = SourceSansPro-SemiBold.otf,
+  ItalicFont = SourceSansPro-It.otf,
+  BoldItalicFont = SourceSansPro-BoldIt.otf
+]
 
 % \setromanfont[Mapping={tex-text}, 
 % 	Numbers={OldStyle},
@@ -113,19 +119,21 @@ BoldFont = Source Sans Pro-{Semi-bold}]{Source Sans Pro}
 %-----------------------------------------------------------------------------------------------
 \vspace{-3mm}
 \begin{rSection}{Publications}
-\textbf{Preprints}
+\textbf{Journal Papers}
 \vspace{-1mm}
 \begin{enumerate}[leftmargin=0.5cm]
-\item A. Trivedi, \textbf{S. Prajapati}, M. Zolotas, M. Everett, T. Pad{\i}r, ``Chance-Constrained Convex MPC for Robust Quadru-ped Locomotion Under Parametric and Additive Uncertainties," IEEE Robotics and Automation Letters (RA-L) \textbf{(Under Review)}.
-     \item A. Trivedi, \textbf{S. Prajapati}, A. Shirgaonkar, M. Zolotas, T. Pad{\i}r, ``Data-Driven Sampling Based Stochastic MPC for Skid-Steer Mobile
-Robot Navigation," 2025 IEEE Conference on Robotics and Automation (ICRA), Atlanta, GA, USA, 2025 \textbf{(Under Review)}.
-    \item N. U. Akmandor, \textbf{S. Prajapati}, M. Zolotas, T. Pad{\i}r, ``Re4MPC: Reactive Nonlinear MPC for Multi-model Motion Planning via Deep Reinforcement Learning," 2025 IEEE Conference on Robotics and Automation (ICRA), Atlanta, GA, USA, 2025 \textbf{(Under Review)}.
+  \item A. Trivedi, \textbf{S. Prajapati}, M. Zolotas, M. Everett, T. Pad{\i}r, ``Chance-Constrained Convex MPC for Robust Quadruped Locomotion Under Parametric and Additive Uncertainties," 2025, IEEE Robotics and Automation Letters (RA-L).
 \end{enumerate}
-\vspace{-1mm}
+% \vspace{-1mm}
 \textbf{Peer-Reviewed Conference Papers}
 \vspace{-1mm}
 %--copy and paste this region  if you need more--
 \begin{enumerate}[leftmargin=0.5cm]
+    \item \textbf{S. Prajapati}, A. Trivedi, N. Hanson, B. Maxwell, T. Pad{\i}r, ``Spectral Signature Mapping from RGB Imagery for Terrain-Aware Navigation,'' IEEE Robotic Computing and Communication (IRC), Naples, Italy, 2025.
+     \item A. Trivedi, \textbf{S. Prajapati}, A. Shirgaonkar, M. Zolotas, T. Pad{\i}r, ``Data-Driven Sampling Based Stochastic MPC for Skid-Steer Mobile
+Robot Navigation," 2025 IEEE Conference on Robotics and Automation (ICRA), Atlanta, GA, USA, 2025.
+    \item N. U. Akmandor, \textbf{S. Prajapati}, M. Zolotas, T. Pad{\i}r, ``Re4MPC: Reactive Nonlinear MPC for Multi-model Motion Planning via Deep Reinforcement Learning," 2025 IEEE Conference on Automation Science and Engineering (CASE), Los Angeles, CA, USA, 2025.
+
     \item N. Hanson$^{~\ref{equalcont}}$, \textbf{S. Prajapati \footnote{equal contribution \label{equalcont}}}, J. Tukpah, Y. Mewada, and T. Pad{\i}r, ``Automated Forest Biomass Mapping with Autonomous Hyperspectral
 Imaging for Wildfire Monitoring," 2024 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR), New York, US, 2024.
     \item A. Trivedi, M. Zolotas, A. Abbas, \textbf{S. Prajapati}, S. Bazzi, and T. Pad{\i}r, ``A Probabilistic Motion Model for Skid-Steer Wheeled Mobile Robot Navigation on Off-Road Terrains," 2024 IEEE Conference on Robotics and Automation (ICRA), Yokohama, JP, 2024.
@@ -247,7 +255,7 @@ Team Leader \hfill {\ {Ahmedabad, IN}}
 %--copy and paste this region  if you need more-- 
  
 \begin{enumerate}
-    \item Reviewer for IEEE conferences (ICML, ICRA, SSRR) and International Journal for Dynamics and Control.
+    \item Reviewer for IEEE conferences (ICML, ICRA, SSRR) and Amazon internal conferences.
     \item Mentored undergraduates, guided them in robotics research and projects.
 \end{enumerate}
 \end{rSection}
